@@ -58,7 +58,7 @@ body, html{
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .search-bar-section, .edit-profile-section{
@@ -78,6 +78,15 @@ body, html{
     justify-content: center;
     width: 60%;
     gap: 10px;
+}
+
+.search-bar-section > .search-bar > .logo img{
+    width: 30px;
+}
+
+.search-bar-section > .search-bar > .logo img:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 .search-bar > .search{
@@ -196,16 +205,10 @@ body, html{
     grid-column: 2 / 3;
     background-color: #f1f5f7;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.others{
-    border: 1px solid black;
-    height: 200px;
+    grid-template-columns: 3fr 1fr;
 }
 
 .project-container{
-    border: 1px solid black;
     padding: 20px;
 }
 
@@ -216,7 +219,7 @@ body, html{
 }
 
 .project-card{
-    height: 300px;
+    height: 270px;
     background-color: white;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
@@ -243,4 +246,59 @@ body, html{
 .project-items img:hover{
     opacity: 0.7;
     cursor: pointer;
+}
+
+.others{
+    padding: 20px;
+}
+
+.announcements-container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.announcement-title{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.announcement-item:first-child, .announcement-item:nth-child(2){
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+
+.trending-container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.trending-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.trending-item:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
+
+.trending-item p{
+    margin: 0;
+}
+
+.trending-item img{
+    width: 50px;
+    border-radius: 50%;
 }
